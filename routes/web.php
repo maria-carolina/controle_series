@@ -14,3 +14,7 @@
 Route::get('/', 'SerieController@index')->name('index');
 Route::post('/cadastrar', 'SerieController@store')->name('cadastrar');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
