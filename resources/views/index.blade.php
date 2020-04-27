@@ -34,6 +34,19 @@
             <input type="text" name="nome">
             <button type="submit">Adicionar</button>
         </form>
+
+        <table>
+            <tr>
+                <th>Título</th>
+            </tr>
+            <tbody>
+            @foreach($series as $serie)
+                <tr>
+                    <td>{{$serie->nome}}</td>
+                </tr>
+            @endforeach
+            </tbody>
+        </table>
     </div>
 
     <!-- Bootstrap 4 -->

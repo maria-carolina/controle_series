@@ -14,7 +14,7 @@ class SerieController extends Controller
 
         $mensagem = $request->session()->get('mensagem');
 
-        return view('index', compact('mensagem'));
+        return view('index', compact('mensagem', 'series'));
     }
 
     public function store (Request $request)
