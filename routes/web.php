@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'SerieController@index')->name('index');
+Route::post('/cadastrar', 'SerieController@store')->name('cadastrar');
+
